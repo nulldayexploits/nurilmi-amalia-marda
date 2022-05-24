@@ -49,7 +49,7 @@
 <body>
 
 <center>
-	<h1 style="font-size:50px">Pencarian Cerpen</h1>
+	<h1 style="font-size:50px">Pencarian</h1>
 	<br>
 	<form method="get">
 		<input type="text" name="p" id="p" placeholder="Masukkan Kata Kunci....">
