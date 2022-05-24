@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerpen</title>
+    <title>Detail</title>
     <style>
         body {
             text-align: center;
@@ -20,13 +20,13 @@
 </head>
 <?php 
     $ID = $_GET['id'];
-    $qry = mysqli_query($mysqli, "SELECT * FROM tb_cerpen WHERE id = $ID");
+    $qry = mysqli_query($mysqli, "SELECT * FROM tb_uud WHERE id = $ID");
     $data = mysqli_fetch_array($qry);
 ?>
 <body>
-    <h1><?php echo $data['judul']; ?></h1>
+    <h1><?php echo $data['halaman_ke']; ?></h1>
     <div class="isi_cerpen">
-        <?php echo $data['isi_cerpen']; ?>
+        <?php echo $data['isi']; ?>
     </div>
 </body>
 </html>

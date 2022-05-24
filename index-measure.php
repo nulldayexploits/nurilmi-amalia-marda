@@ -12,12 +12,12 @@ function pencarian($katakunci)
     $query = $preprocess::preprocess($katakunci);
 
     // == STEP 3 medapatkan dokumen ke array
-    $connect = mysqli_query(mysqli_connect('localhost', 'root', 'palaguna_maria_33', '21_information_retrieval','3370'), "SELECT * FROM tb_cerpen");
+    $connect = mysqli_query(mysqli_connect('localhost', 'root', '', '21_information_retrieval','3306'), "SELECT * FROM tb_uud");
     $arrayDokumen = [];
     while ($row = mysqli_fetch_assoc($connect)) {
         $arrayDoc = [
             'id_doc' => $row['id'],
-            'dokumen' => implode(" ", $preprocess::preprocess($row['isi_cerpen']))
+            'dokumen' => implode(" ", $preprocess::preprocess($row['isi']))
         ];
         array_push($arrayDokumen, $arrayDoc);
     }

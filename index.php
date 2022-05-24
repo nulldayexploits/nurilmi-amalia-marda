@@ -91,7 +91,7 @@
             <thead>
 			<tr>
 			  <th>No</th>
-			  <th>Judul</th>
+			  <th>Halaman Ke</th>
 			  <th>Nilai VSM</th>
 			  <th>Aksi</th>
 			</tr>
@@ -102,7 +102,7 @@
            <tfoot>  
             <tr>
 			  <th>No</th>
-			  <th>Judul</th>
+			  <th>Halaman Ke</th>
 			  <th>Nilai VSM</th>
 			  <th>Aksi</th>
 			</tr>
@@ -156,7 +156,7 @@
           ],
         "columns": [
           { "data": null },
-          { "data": "judul" },
+          { "data": "halaman_ke" },
           { "data": "ranking" },
           { "data": "btn" }
         ],

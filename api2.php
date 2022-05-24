@@ -26,12 +26,12 @@ function pencarian($katakunci, $mysqli)
     $a=1;
 
     // == STEP 3 medapatkan dokumen ke array
-    $connect = mysqli_query($mysqli, "SELECT * FROM tb_cerpen");
+    $connect = mysqli_query($mysqli, "SELECT * FROM tb_uud");
     $arrayDokumen = [];
     while ($row = mysqli_fetch_assoc($connect)) {
         $arrayDoc = [
-            'id_doc' => $row['id'].' || '.$row['judul'],
-            'dokumen' => implode(" ", $preprocess::preprocess($row['isi_cerpen']))
+            'id_doc' => $row['id'].' || '.$row['halaman_ke'],
+            'dokumen' => implode(" ", $preprocess::preprocess($row['isi']))
         ];
         array_push($arrayDokumen, $arrayDoc);
     }
@@ -54,7 +54,7 @@ function pencarian($katakunci, $mysqli)
 
 			$datas[] = [
 						 "id" => $dx,
-						 "judul" => $nm,
+						 "halaman_ke" => $nm,
 						 "ranking" => $d['ranking'],
 						 "btn" => "<a href='baca.php?id=$dx' class='button'>Baca Cerpen</a>"
 					   ];
