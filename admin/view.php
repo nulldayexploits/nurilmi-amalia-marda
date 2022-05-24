@@ -11,7 +11,7 @@
     
   <!-- Login -->
   <div class="w3-container" id="login" style="margin-top:75px"> 
-    <h1 class="w3-xxxlarge judul-content"><b>Kelola Cerpen</b></h1>
+    <h1 class="w3-xxxlarge judul-content"><b>UU Cipta Kerja</b></h1>
     <hr class="w3-round garis-judul-content">
       
       <a href="tambah.php" class="w3-button w3-padding-large w3-red w3-margin-bottom">Tambah Data</a>
@@ -20,8 +20,8 @@
       <table border=1 width="100%" style="border-collapse: collapse;">
         <tr class="w3-red">
           <th>No</th>
-          <th>Judul Cerpen</th>
-          <th>Isi Cerpen</th>
+          <th>Halaman Ke</th>
+          <th>Isi</th>
           <th>Aksi</th>
         </tr>
         
