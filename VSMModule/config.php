@@ -5,7 +5,8 @@
  *
 */
 
-include '../admin/connect-db.php';
+include_once __DIR__."/../admin/config/connect-db.php";
+#include '../admin/connect-db.php';
 
 $database = [
     'hostname' => $databaseHost,

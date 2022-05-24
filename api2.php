@@ -8,7 +8,7 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 
 include_once __DIR__."/VSMModule/Preprocessing.php";
 include_once __DIR__."/VSMModule/VSM.php";
-include_once __DIR__."admin/config/connect-db.php";
+include_once __DIR__."/admin/config/connect-db.php";
 
 pencarian($_GET['p'], $mysqli);
 
